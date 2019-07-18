@@ -237,9 +237,9 @@ class SslStoreApi
 	public function getURL()
 	{
 		if (strtoupper($this->_apimode) == 'LIVE') {
-			return 'https://api.hasnhasan\TheSslStore.com/rest';
+			return 'https://api.thesslstore.com/rest';
 		} else {
-			return 'https://sandbox-wbapi.hasnhasan\TheSslStore.com/rest';
+			return 'https://sandbox-wbapi.thesslstore.com/rest';
 		}
 	}
 
