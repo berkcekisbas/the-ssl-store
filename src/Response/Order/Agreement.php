@@ -6,9 +6,9 @@
  * Time: 5:43 PM
  */
 
-namespace TheSslStore\Response\Order;
+namespace hasnhasan\TheSslStore\Response\Order;
 
-use TheSslStore\Core\BaseResponse;
+use hasnhasan\TheSslStore\Core\BaseResponse;
 
 class Agreement extends BaseResponse
 {

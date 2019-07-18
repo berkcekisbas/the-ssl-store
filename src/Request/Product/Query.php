@@ -1,8 +1,8 @@
 <?php
 
-namespace TheSslStore\Request\Product;
+namespace hasnhasan\TheSslStore\Request\Product;
 
-use TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\BaseRequest;
 
 class Query extends BaseRequest
 {

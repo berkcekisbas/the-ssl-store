@@ -1,11 +1,11 @@
 <?php
 
-namespace TheSslStore\Core;
+namespace hasnhasan\TheSslStore\Core;
 
 trait DateTimeCultureValidator
 {
 	/**
-	 * @link https://www.thesslstore.com/api/datetime-culture-list
+	 * @link https://www.hasnhasan\TheSslStore.com/api/datetime-culture-list
 	 *
 	 * @var array
 	 */

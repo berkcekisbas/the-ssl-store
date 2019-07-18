@@ -1,53 +1,53 @@
 <?php
 
-namespace TheSslStore;
+namespace hasnhasan\TheSslStore;
 
-use TheSslStore\Core\ApiRequest;
-use TheSslStore\Core\ApiResponse;
-use TheSslStore\Core\CurlResponse;
-use TheSslStore\Request\Order\ChangeApproverEmail;
-use TheSslStore\Request\Order\Download;
-use TheSslStore\Request\Order\InviteOrder;
-use TheSslStore\Request\Order\NewOrder;
-use TheSslStore\Request\Order\NewOrderRequestFree;
-use TheSslStore\Request\Order\OrderAgreement;
-use TheSslStore\Request\Order\Refund;
-use TheSslStore\Request\Order\RefundStatus;
-use TheSslStore\Request\Order\ReIssue;
-use TheSslStore\Request\Order\Resend;
-use TheSslStore\Request\Order\Status;
-use TheSslStore\Request\Order\Validate;
-use TheSslStore\Request\Setting\CancelNotification;
-use TheSslStore\Request\Setting\SetOrderCallBack;
-use TheSslStore\Request\Setting\SetPriceCallBack;
-use TheSslStore\Request\Setting\SetTemplate;
-use TheSslStore\Request\User\Activate;
-use TheSslStore\Request\User\Add;
-use TheSslStore\Request\User\Deactivate;
-use TheSslStore\Request\User\Query;
-use TheSslStore\Response\Csr;
-use TheSslStore\Response\FreeClaimfree;
-use TheSslStore\Response\FreeCuinfo;
-use TheSslStore\Response\HealthValidate;
-use TheSslStore\Response\Order\Agreement;
-use TheSslStore\Response\Order\ApproverList;
-use TheSslStore\Response\Order\DownloadZip;
-use TheSslStore\Response\Order\ModifiedSummary;
-use TheSslStore\Response\Order\Order;
-use TheSslStore\Response\Order\Pmr;
-use TheSslStore\Response\Order\VulnerabilityScan;
-use TheSslStore\Response\SslValidation;
-use TheSslStore\Response\User\AccountDetail;
-use TheSslStore\Response\User\NewUser;
-use TheSslStore\Response\User\SubUser;
-use TheSslStore\Response\Whois;
+use hasnhasan\TheSslStore\Core\ApiRequest;
+use hasnhasan\TheSslStore\Core\ApiResponse;
+use hasnhasan\TheSslStore\Core\CurlResponse;
+use hasnhasan\TheSslStore\Request\Order\ChangeApproverEmail;
+use hasnhasan\TheSslStore\Request\Order\Download;
+use hasnhasan\TheSslStore\Request\Order\InviteOrder;
+use hasnhasan\TheSslStore\Request\Order\NewOrder;
+use hasnhasan\TheSslStore\Request\Order\NewOrderRequestFree;
+use hasnhasan\TheSslStore\Request\Order\OrderAgreement;
+use hasnhasan\TheSslStore\Request\Order\Refund;
+use hasnhasan\TheSslStore\Request\Order\RefundStatus;
+use hasnhasan\TheSslStore\Request\Order\ReIssue;
+use hasnhasan\TheSslStore\Request\Order\Resend;
+use hasnhasan\TheSslStore\Request\Order\Status;
+use hasnhasan\TheSslStore\Request\Order\Validate;
+use hasnhasan\TheSslStore\Request\Setting\CancelNotification;
+use hasnhasan\TheSslStore\Request\Setting\SetOrderCallBack;
+use hasnhasan\TheSslStore\Request\Setting\SetPriceCallBack;
+use hasnhasan\TheSslStore\Request\Setting\SetTemplate;
+use hasnhasan\TheSslStore\Request\User\Activate;
+use hasnhasan\TheSslStore\Request\User\Add;
+use hasnhasan\TheSslStore\Request\User\Deactivate;
+use hasnhasan\TheSslStore\Request\User\Query;
+use hasnhasan\TheSslStore\Response\Csr;
+use hasnhasan\TheSslStore\Response\FreeClaimfree;
+use hasnhasan\TheSslStore\Response\FreeCuinfo;
+use hasnhasan\TheSslStore\Response\HealthValidate;
+use hasnhasan\TheSslStore\Response\Order\Agreement;
+use hasnhasan\TheSslStore\Response\Order\ApproverList;
+use hasnhasan\TheSslStore\Response\Order\DownloadZip;
+use hasnhasan\TheSslStore\Response\Order\ModifiedSummary;
+use hasnhasan\TheSslStore\Response\Order\Order;
+use hasnhasan\TheSslStore\Response\Order\Pmr;
+use hasnhasan\TheSslStore\Response\Order\VulnerabilityScan;
+use hasnhasan\TheSslStore\Response\SslValidation;
+use hasnhasan\TheSslStore\Response\User\AccountDetail;
+use hasnhasan\TheSslStore\Response\User\NewUser;
+use hasnhasan\TheSslStore\Response\User\SubUser;
+use hasnhasan\TheSslStore\Response\Whois;
 
 /**
  * Class SslStoreApi
  *
- * @package TheSslStore
+ * @package hasnhasan\TheSslStore
  */
-class Api
+class SslStoreApi
 {
 	public static $API_MODE_LIVE = 'LIVE';
 	public static $API_MODE_TEST = 'TEST';
@@ -183,7 +183,7 @@ class Api
 		$curl     = $this->getCURL($url, $HttpMethod, $msg);
 		$response = $this->getCURLResponse($curl);
 
-		if (Api::$LOG_ALLAPICALLS) {
+		if (SslStoreApi::$LOG_ALLAPICALLS) {
 			$requestfile  = $logid.'-request.json';
 			$responsefile = $logid.'-response.json';
 			file_put_contents($requestfile, $msg);
@@ -237,21 +237,21 @@ class Api
 	public function getURL()
 	{
 		if (strtoupper($this->_apimode) == 'LIVE') {
-			return 'https://api.thesslstore.com/rest';
+			return 'https://api.hasnhasan\TheSslStore.com/rest';
 		} else {
-			return 'https://sandbox-wbapi.thesslstore.com/rest';
+			return 'https://sandbox-wbapi.hasnhasan\TheSslStore.com/rest';
 		}
 	}
 
 	/**
-	 * @param \TheSslStore\Request\Csr $csr_request
+	 * @param \hasnhasan\TheSslStore\Request\Csr $csr_request
 	 *
 	 * @return Csr
 	 */
 	public function csr($csr_request)
 	{
 		$url                 = $this->getURL().'/csr/';
-		$csrreq              = new \TheSslStore\Request\Csr();
+		$csrreq              = new \hasnhasan\TheSslStore\Request\Csr();
 		$csrreq->ProductCode = $csr_request->ProductCode;
 		$csrreq->CSR         = str_ireplace("\r\n", '', $csr_request->CSR);
 		$csrresp             = new Csr();
@@ -260,7 +260,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\SslValidation $ssl_validation_request
+	 * @param \hasnhasan\TheSslStore\Request\SslValidation $ssl_validation_request
 	 *
 	 * @return SslValidation
 	 */
@@ -273,7 +273,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\Whois $whois_request
+	 * @param \hasnhasan\TheSslStore\Request\Whois $whois_request
 	 *
 	 * @return Whois
 	 */
@@ -286,7 +286,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\FreeClaimFree $free_claimfree_request
+	 * @param \hasnhasan\TheSslStore\Request\FreeClaimFree $free_claimfree_request
 	 *
 	 * @return FreeClaimfree
 	 */
@@ -299,7 +299,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\FreeCuinfo $free_cuinfo_request
+	 * @param \hasnhasan\TheSslStore\Request\FreeCuinfo $free_cuinfo_request
 	 *
 	 * @return FreeCuinfo
 	 */
@@ -323,7 +323,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\HealthValidate $health_validate_request
+	 * @param \hasnhasan\TheSslStore\Request\HealthValidate $health_validate_request
 	 *
 	 * @return HealthValidate
 	 */
@@ -342,7 +342,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\HealthValidateToken $health_validate_token_request
+	 * @param \hasnhasan\TheSslStore\Request\HealthValidateToken $health_validate_token_request
 	 *
 	 * @return HealthValidate
 	 */
@@ -392,7 +392,7 @@ class Api
 	/**
 	 * @param Download $order_download_request
 	 *
-	 * @return \TheSslStore\Response\Order\Download
+	 * @return \hasnhasan\TheSslStore\Response\Order\Download
 	 */
 	public function order_download($order_download_request)
 	{
@@ -456,21 +456,21 @@ class Api
 
 	/**  Should return array(order_response())
 	 *
-	 * @param \TheSslStore\Request\Order\Query $order_query_request
+	 * @param \hasnhasan\TheSslStore\Request\Order\Query $order_query_request
 	 *
 	 * @return object
 	 */
 	public function order_query($order_query_request)
 	{
 		$url  = $this->getURL().'/order/query/';
-		$resp = new \TheSslStore\Response\Order\Query();
+		$resp = new \hasnhasan\TheSslStore\Response\Order\Query();
 
 		return $this->postToCurl($url, $order_query_request, $resp);
 	}
 
 	/**  Should return array(order_modified_summary_response())
 	 *
-	 * @param \TheSslStore\Request\Order\ModifiedSummary $order_modified_summary_request
+	 * @param \hasnhasan\TheSslStore\Request\Order\ModifiedSummary $order_modified_summary_request
 	 *
 	 * @return object
 	 */
@@ -483,7 +483,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\Order\VulnerabilityScan $order_refundrequest_request
+	 * @param \hasnhasan\TheSslStore\Request\Order\VulnerabilityScan $order_refundrequest_request
 	 *
 	 * @return ApiResponse
 	 */
@@ -498,7 +498,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\Order\VulnerabilityScan $order_refundrequest_request
+	 * @param \hasnhasan\TheSslStore\Request\Order\VulnerabilityScan $order_refundrequest_request
 	 *
 	 * @return VulnerabilityScan
 	 */
@@ -606,7 +606,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\Order\Pmr $order_pmr_request
+	 * @param \hasnhasan\TheSslStore\Request\Order\Pmr $order_pmr_request
 	 *
 	 * @return apiresponse
 	 */
@@ -620,7 +620,7 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\Product\Query $product_query_request
+	 * @param \hasnhasan\TheSslStore\Request\Product\Query $product_query_request
 	 *
 	 * @return object
 	 */
@@ -738,13 +738,13 @@ class Api
 	public function user_query($user_query_request)
 	{
 		$url  = $this->getURL().'/user/query/';
-		$resp = new \TheSslStore\Response\User\Query();
+		$resp = new \hasnhasan\TheSslStore\Response\User\Query();
 
 		return $this->postToCurl($url, $user_query_request, $resp);
 	}
 
 	/**
-	 * @param \TheSslStore\Request\User\NewUser $user_newuser_request
+	 * @param \hasnhasan\TheSslStore\Request\User\NewUser $user_newuser_request
 	 *
 	 * @return object
 	 */
@@ -757,9 +757,9 @@ class Api
 	}
 
 	/**
-	 * @param \TheSslStore\Request\User\AccountDetail $user_account_detail_request
+	 * @param \hasnhasan\TheSslStore\Request\User\AccountDetail $user_account_detail_request
 	 *
-	 * @return \TheSslStore\Response\User\AccountDetail
+	 * @return \hasnhasan\TheSslStore\Response\User\AccountDetail
 	 */
 	public function user_account_detail($user_account_detail_request)
 	{

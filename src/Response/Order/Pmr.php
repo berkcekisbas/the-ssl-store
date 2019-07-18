@@ -1,12 +1,12 @@
 <?php
 
-namespace TheSslStore\Response\Order;
+namespace hasnhasan\TheSslStore\Response\Order;
 
-use TheSslStore\Core\BaseResponse;
+use hasnhasan\TheSslStore\Core\BaseResponse;
 
 class Pmr extends BaseResponse
 {
-	public $TheSSLStoreOrderID;
+	public $hasnhasan\TheSslStoreOrderID;
 	public $PMRStatus;
 	public $ExpediteDate;
 }

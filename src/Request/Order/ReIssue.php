@@ -1,9 +1,9 @@
 <?php
 
-namespace TheSslStore\Request\Order;
+namespace hasnhasan\TheSslStore\Request\Order;
 
-use TheSslStore\Core\BaseRequest;
-use TheSslStore\Core\WebServerTypeValidator;
+use hasnhasan\TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\WebServerTypeValidator;
 
 class ReIssue extends BaseRequest
 {
@@ -20,7 +20,7 @@ class ReIssue extends BaseRequest
         parent::__construct($args);
     }
 
-    public $TheSSLStoreOrderID;
+    public $hasnhasan\TheSslStoreOrderID;
     public $CSR;
     public $WebServerType;
     public $DNSNames;

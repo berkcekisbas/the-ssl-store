@@ -1,6 +1,6 @@
 <?php
 
-namespace TheSslStore\Core;
+namespace hasnhasan\TheSslStore\Core;
 
 class Contact
 {

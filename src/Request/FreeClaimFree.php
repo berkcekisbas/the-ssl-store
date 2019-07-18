@@ -1,14 +1,14 @@
 <?php
 
-namespace TheSslStore\Request;
+namespace hasnhasan\TheSslStore\Request;
 
-use TheSslStore\Core\BaseRequest;
-use TheSslStore\Request\Order\NewOrderRequestFree;
+use hasnhasan\TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Request\Order\NewOrderRequestFree;
 
 class FreeClaimFree extends BaseRequest
 {
 	public $ProductCode;
-	public $RelatedTheSSLStoreOrderID;
+	public $Relatedhasnhasan\TheSslStoreOrderID;
 	public $NewOrderRequest;
 
 	public function __construct($args = [])

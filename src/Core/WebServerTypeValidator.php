@@ -1,11 +1,11 @@
 <?php
 
-namespace TheSslStore\Core;
+namespace hasnhasan\TheSslStore\Core;
 
 trait WebServerTypeValidator
 {
 	/**
-	 * @link https://www.thesslstore.com/api/web-server-types
+	 * @link https://www.hasnhasan\TheSslStore.com/api/web-server-types
 	 *
 	 * @var array
 	 */

@@ -1,10 +1,10 @@
 <?php
 
-namespace TheSslStore\Request\Order;
+namespace hasnhasan\TheSslStore\Request\Order;
 
-use TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\BaseRequest;
 
 class Pmr extends BaseRequest
 {
-    public $TheSSLStoreOrderID;
+    public $hasnhasan\TheSslStoreOrderID;
 }
