@@ -6,5 +6,5 @@ use hasnhasan\TheSslStore\Core\BaseRequest;
 
 class Pmr extends BaseRequest
 {
-    public $hasnhasan\TheSslStoreOrderID;
+    public $TheSSLStoreOrderID;
 }

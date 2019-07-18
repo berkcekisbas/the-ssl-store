@@ -10,7 +10,7 @@ class DownloadZip extends BaseRequest
     use DateTimeCultureValidator;
 
     public $CustomOrderID;
-    public $hasnhasan\TheSslStoreOrderID;
+    public $TheSSLStoreOrderID;
     public $ResendEmailType;
     public $ResendEmail;
     public $RefundReason;

@@ -18,7 +18,7 @@ class Query extends BaseResponse
 
 	public $PartnerOrderID;
 	public $CustomOrderID;
-	public $hasnhasan\TheSslStoreOrderID;
+	public $TheSSLStoreOrderID;
 	public $VendorOrderID;
 	public $RefundRequestID;
 	public $isRefundApproved;

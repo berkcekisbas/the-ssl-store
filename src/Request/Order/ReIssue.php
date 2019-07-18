@@ -20,7 +20,7 @@ class ReIssue extends BaseRequest
         parent::__construct($args);
     }
 
-    public $hasnhasan\TheSslStoreOrderID;
+    public $TheSSLStoreOrderID;
     public $CSR;
     public $WebServerType;
     public $DNSNames;

@@ -14,7 +14,7 @@ class FreeClaimfree extends BaseResponse
 {
     public $isAllowed;
     public $PartnerOrderID;
-    public $hasnhasan\TheSslStoreOrderID;
+    public $TheSSLStoreOrderID;
     public $VendorOrderID;
     public $LoginName;
     public $LoginPassword;
