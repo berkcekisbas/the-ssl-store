@@ -9,7 +9,7 @@
             "email": "hasan.ozsezgin@gmail.com"
         }
     ],
-     "minimum-stability": "master",
+     "minimum-stability": "dev",
     "require": {
         "php": "^7.0",
         "ext-curl": "*"
