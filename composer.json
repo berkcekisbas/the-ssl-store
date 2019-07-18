@@ -1,5 +1,5 @@
 {
-    "name": "hasnhasan/the-ssl-store",
+    "name": "hasnhasan/TheSslStore",
     "description": "thesslstore.com api",
     "type": "library",
     "homepage": "https://www.thesslstore.com",
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "hasnhasan\\the-ssl-store\\": "src/"
+            "hasnhasan\\TheSslStore\\": "src/"
         }
     }
 }
