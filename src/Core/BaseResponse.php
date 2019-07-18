@@ -9,7 +9,7 @@ class BaseResponse
 
     public function __construct()
     {
-        $this->AuthResponse = new apiresponse();
+        $this->AuthResponse = new ApiResponse();
     }
 
     public function __toString(): string
