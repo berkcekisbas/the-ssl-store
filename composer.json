@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "hasnhasan\\TheSslStore\\": "src/"
+            "hasnhasan\\the-ssl-store\\": "src/"
         }
     }
 }
