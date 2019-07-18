@@ -47,7 +47,7 @@ use hasnhasan\TheSslStore\Response\Whois;
  *
  * @package hasnhasan\TheSslStore
  */
-class Api
+class SslStoreApi
 {
 	public static $API_MODE_LIVE = 'LIVE';
 	public static $API_MODE_TEST = 'TEST';
@@ -183,7 +183,7 @@ class Api
 		$curl     = $this->getCURL($url, $HttpMethod, $msg);
 		$response = $this->getCURLResponse($curl);
 
-		if (Api::$LOG_ALLAPICALLS) {
+		if (SslStoreApi::$LOG_ALLAPICALLS) {
 			$requestfile  = $logid.'-request.json';
 			$responsefile = $logid.'-response.json';
 			file_put_contents($requestfile, $msg);
