@@ -1,8 +1,8 @@
 <?php
 
-namespace TheSslStore\Request;
+namespace hasnhasan\TheSslStore\Request;
 
-use TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\BaseRequest;
 
 class SslValidation extends BaseRequest
 {

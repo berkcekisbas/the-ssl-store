@@ -1,8 +1,8 @@
 <?php
 
-namespace TheSslStore\Request\Setting;
+namespace hasnhasan\TheSslStore\Request\Setting;
 
-use TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\BaseRequest;
 
 class SetTemplate extends BaseRequest
 {

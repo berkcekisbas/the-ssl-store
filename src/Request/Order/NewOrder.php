@@ -1,12 +1,12 @@
 <?php
 
-namespace TheSslStore\Request\Order;
+namespace hasnhasan\TheSslStore\Request\Order;
 
-use TheSslStore\Core\BaseRequest;
-use TheSslStore\Core\Contact;
-use TheSslStore\Core\OrganizationAddress;
-use TheSslStore\Core\OrganizationInfo;
-use TheSslStore\Core\WebServerTypeValidator;
+use hasnhasan\TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\Contact;
+use hasnhasan\TheSslStore\Core\OrganizationAddress;
+use hasnhasan\TheSslStore\Core\OrganizationInfo;
+use hasnhasan\TheSslStore\Core\WebServerTypeValidator;
 
 class NewOrder extends BaseRequest
 {
@@ -38,7 +38,7 @@ class NewOrder extends BaseRequest
     public $isCUOrder;
     public $isRenewalOrder;
     public $SpecialInstructions;
-    public $RelatedTheSSLStoreOrderID;
+    public $Relatedhasnhasan\TheSslStoreOrderID;
     public $isTrialOrder;
     public $AdminContact;
     public $TechnicalContact;

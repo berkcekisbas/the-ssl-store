@@ -1,10 +1,10 @@
 <?php
 
-namespace TheSslStore\Response\Order;
+namespace hasnhasan\TheSslStore\Response\Order;
 
-use TheSslStore\Core\BaseResponse;
-use TheSslStore\Core\Contact;
-use TheSslStore\Core\OrderStatus;
+use hasnhasan\TheSslStore\Core\BaseResponse;
+use hasnhasan\TheSslStore\Core\Contact;
+use hasnhasan\TheSslStore\Core\OrderStatus;
 
 class Query extends BaseResponse
 {
@@ -18,7 +18,7 @@ class Query extends BaseResponse
 
 	public $PartnerOrderID;
 	public $CustomOrderID;
-	public $TheSSLStoreOrderID;
+	public $hasnhasan\TheSslStoreOrderID;
 	public $VendorOrderID;
 	public $RefundRequestID;
 	public $isRefundApproved;

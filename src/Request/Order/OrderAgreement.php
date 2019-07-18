@@ -1,11 +1,11 @@
 <?php
 
-namespace TheSslStore\Request\Order;
+namespace hasnhasan\TheSslStore\Request\Order;
 
-use TheSslStore\Core\BaseRequest;
-use TheSslStore\Core\OrganizationAddress;
-use TheSslStore\Core\OrganizationInfo;
-use TheSslStore\Core\WebServerTypeValidator;
+use hasnhasan\TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\OrganizationAddress;
+use hasnhasan\TheSslStore\Core\OrganizationInfo;
+use hasnhasan\TheSslStore\Core\WebServerTypeValidator;
 
 class OrderAgreement extends BaseRequest
 {

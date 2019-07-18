@@ -6,15 +6,15 @@
  * Time: 5:37 PM
  */
 
-namespace TheSslStore\Response;
+namespace hasnhasan\TheSslStore\Response;
 
-use TheSslStore\Core\BaseResponse;
+use hasnhasan\TheSslStore\Core\BaseResponse;
 
 class FreeClaimfree extends BaseResponse
 {
     public $isAllowed;
     public $PartnerOrderID;
-    public $TheSSLStoreOrderID;
+    public $hasnhasan\TheSslStoreOrderID;
     public $VendorOrderID;
     public $LoginName;
     public $LoginPassword;

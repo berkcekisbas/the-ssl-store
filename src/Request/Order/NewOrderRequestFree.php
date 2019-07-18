@@ -1,9 +1,9 @@
 <?php
 
-namespace TheSslStore\Request\Order;
+namespace hasnhasan\TheSslStore\Request\Order;
 
-use TheSslStore\Core\BaseRequest;
-use TheSslStore\Core\Contact;
+use hasnhasan\TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\Contact;
 
 class NewOrderRequestFree extends BaseRequest
 {
@@ -19,7 +19,7 @@ class NewOrderRequestFree extends BaseRequest
     public $isRenewalOrder;
     public $isTrialOrder;
     public $ProductCode;
-    public $RelatedTheSSLStoreOrderID;
+    public $Relatedhasnhasan\TheSslStoreOrderID;
     public $ValidityPeriod;
     public $ServerCount;
 }

@@ -6,10 +6,10 @@
  * Time: 5:39 PM
  */
 
-namespace TheSslStore\Response;
+namespace hasnhasan\TheSslStore\Response;
 
-use TheSslStore\Core\BaseResponse;
-use TheSslStore\Core\OrderStatus;
+use hasnhasan\TheSslStore\Core\BaseResponse;
+use hasnhasan\TheSslStore\Core\OrderStatus;
 
 class HealthValidateToken extends BaseResponse
 {

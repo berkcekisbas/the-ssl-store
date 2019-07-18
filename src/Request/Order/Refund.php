@@ -1,13 +1,13 @@
 <?php
 
-namespace TheSslStore\Request\Order;
+namespace hasnhasan\TheSslStore\Request\Order;
 
-use TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\BaseRequest;
 
 class Refund extends BaseRequest
 {
     public $CustomOrderID;
-    public $TheSSLStoreOrderID;
+    public $hasnhasan\TheSslStoreOrderID;
     public $ResendEmailType;
     public $ResendEmail;
     public $RefundReason;

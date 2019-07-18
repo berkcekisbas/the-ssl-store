@@ -1,16 +1,16 @@
 <?php
 
-namespace TheSslStore\Request\Order;
+namespace hasnhasan\TheSslStore\Request\Order;
 
-use TheSslStore\Core\BaseRequest;
-use TheSslStore\Core\DateTimeCultureValidator;
+use hasnhasan\TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\DateTimeCultureValidator;
 
 class DownloadZip extends BaseRequest
 {
     use DateTimeCultureValidator;
 
     public $CustomOrderID;
-    public $TheSSLStoreOrderID;
+    public $hasnhasan\TheSslStoreOrderID;
     public $ResendEmailType;
     public $ResendEmail;
     public $RefundReason;

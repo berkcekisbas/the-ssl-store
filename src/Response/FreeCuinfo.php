@@ -6,9 +6,9 @@
  * Time: 5:38 PM
  */
 
-namespace TheSslStore\Response;
+namespace hasnhasan\TheSslStore\Response;
 
-use TheSslStore\Core\BaseResponse;
+use hasnhasan\TheSslStore\Core\BaseResponse;
 
 class FreeCuinfo extends BaseResponse
 {

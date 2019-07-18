@@ -1,12 +1,12 @@
 <?php
 
-namespace TheSslStore\Request;
+namespace hasnhasan\TheSslStore\Request;
 
-use TheSslStore\Core\BaseRequest;
-use TheSslStore\Core\Contact;
-use TheSslStore\Core\OrganizationAddress;
-use TheSslStore\Core\OrganizationInfo;
-use TheSslStore\Core\WebServerTypeValidator;
+use hasnhasan\TheSslStore\Core\BaseRequest;
+use hasnhasan\TheSslStore\Core\Contact;
+use hasnhasan\TheSslStore\Core\OrganizationAddress;
+use hasnhasan\TheSslStore\Core\OrganizationInfo;
+use hasnhasan\TheSslStore\Core\WebServerTypeValidator;
 
 class FreeCuinfo extends BaseRequest
 {
@@ -37,7 +37,7 @@ class FreeCuinfo extends BaseRequest
 	public $isCUOrder;
 	public $isRenewalOrder;
 	public $SpecialInstructions;
-	public $RelatedTheSSLStoreOrderID;
+	public $Relatedhasnhasan\TheSslStoreOrderID;
 	public $isTrialOrder;
 	public $AdminContact;
 	public $TechnicalContact;

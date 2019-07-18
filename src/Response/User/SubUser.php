@@ -1,8 +1,8 @@
 <?php
 
-namespace TheSslStore\Response\User;
+namespace hasnhasan\TheSslStore\Response\User;
 
-use TheSslStore\Core\BaseResponse;
+use hasnhasan\TheSslStore\Core\BaseResponse;
 
 class SubUser extends BaseResponse
 {
