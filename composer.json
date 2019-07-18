@@ -2,20 +2,21 @@
     "name": "hasnhasan/the-ssl-store",
     "description": "thesslstore.com api",
     "type": "library",
-    "homepage": "www.thesslstore.com",
+    "homepage": "https://www.thesslstore.com",
     "authors": [
         {
             "name": "Hasan Özsezgin",
             "email": "hasan.ozsezgin@gmail.com"
         }
     ],
+     "minimum-stability": "dev",
     "require": {
         "php": "^7.0",
         "ext-curl": "*"
     },
     "autoload": {
         "psr-4": {
-            "TheSslStore": "src/"
+            "hasnhasan\\TheSslStore\\": "src/"
         }
     }
 }
