@@ -38,7 +38,7 @@ class NewOrder extends BaseRequest
     public $isCUOrder;
     public $isRenewalOrder;
     public $SpecialInstructions;
-    public $Relatedhasnhasan\TheSslStoreOrderID;
+    public $RelatedTheSSLStoreOrderID;
     public $isTrialOrder;
     public $AdminContact;
     public $TechnicalContact;
