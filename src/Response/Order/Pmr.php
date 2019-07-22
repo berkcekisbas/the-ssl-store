@@ -6,7 +6,7 @@ use hasnhasan\TheSslStore\Core\BaseResponse;
 
 class Pmr extends BaseResponse
 {
-	public $hasnhasan\TheSslStoreOrderID;
+	public $TheSSLStoreOrderID;
 	public $PMRStatus;
 	public $ExpediteDate;
 }

@@ -7,7 +7,7 @@ use hasnhasan\TheSslStore\Core\BaseRequest;
 class Resend extends BaseRequest
 {
     public $CustomOrderID;
-    public $hasnhasan\TheSslStoreOrderID;
+    public $TheSSLStoreOrderID;
     public $ResendEmailType;
     public $ResendEmail;
     public $RefundReason;
